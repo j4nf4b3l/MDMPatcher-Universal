@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E45B209926C57749002F4709 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45B209826C57749002F4709 /* AppDelegate.swift */; };
+		E45B209B26C57749002F4709 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45B209A26C57749002F4709 /* ViewController.swift */; };
+		E45B209D26C5774B002F4709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E45B209C26C5774B002F4709 /* Assets.xcassets */; };
+		E45B20A026C5774B002F4709 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45B209E26C5774B002F4709 /* Main.storyboard */; };
+		E45B20AA26C57A69002F4709 /* USBDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45B20A926C57A69002F4709 /* USBDetection.swift */; };
+		E45B20EC26C5855E002F4709 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = E45B20E326C5855C002F4709 /* thread.c */; };
+		E45B20ED26C5855E002F4709 /* socket.c in Sources */ = {isa = PBXBuildFile; fileRef = E45B20E426C5855C002F4709 /* socket.c */; };
+		E45B20EF26C5855E002F4709 /* libidevicefunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = E45B20E826C5855D002F4709 /* libidevicefunctions.c */; };
+		E45B210426C58668002F4709 /* libiboot32patcher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E45B20F126C58667002F4709 /* libiboot32patcher.a */; };
+		E45B210526C58668002F4709 /* libcbpatcher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E45B20F226C58667002F4709 /* libcbpatcher.a */; };
+		E45B210626C58668002F4709 /* libidevicerestore-old.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E45B20F326C58667002F4709 /* libidevicerestore-old.a */; };
+		E45B210726C58668002F4709 /* libplist.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E45B20F426C58667002F4709 /* libplist.dylib */; };
+		E45B210826C58668002F4709 /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E45B20F526C58667002F4709 /* libssl.dylib */; };
+		E45B210926C58668002F4709 /* libfragmentzip.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E45B20F626C58667002F4709 /* libfragmentzip.dylib */; };
+		E45B210A26C58668002F4709 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E45B20F726C58667002F4709 /* libcurl.dylib */; };
+		E45B210B26C58668002F4709 /* libidevicerestore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E45B20F826C58667002F4709 /* libidevicerestore.a */; };
+		E45B210C26C58668002F4709 /* libcbpatcher-old.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E45B20F926C58667002F4709 /* libcbpatcher-old.a */; };
+		E45B210D26C58668002F4709 /* libxpwntool-old.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E45B20FA26C58667002F4709 /* libxpwntool-old.a */; };
+		E45B210E26C58668002F4709 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E45B20FB26C58667002F4709 /* libcrypto.dylib */; };
+		E45B211026C58668002F4709 /* libzip.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E45B20FD26C58668002F4709 /* libzip.dylib */; };
+		E45B211226C58668002F4709 /* libideviceactivation-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E45B20FF26C58668002F4709 /* libideviceactivation-1.0.a */; };
+		E45B211426C58668002F4709 /* libusbmuxd.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E45B210126C58668002F4709 /* libusbmuxd.dylib */; };
+		E45B211526C58668002F4709 /* libxpwntool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E45B210226C58668002F4709 /* libxpwntool.a */; };
+		E45B211926C5871A002F4709 /* iDeviceInfoFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45B211726C5871A002F4709 /* iDeviceInfoFunctions.swift */; };
+		E45B211A26C5871A002F4709 /* ExtensionsShit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45B211826C5871A002F4709 /* ExtensionsShit.swift */; };
+		E45B211B26C58860002F4709 /* libcrypto.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = E45B20FB26C58667002F4709 /* libcrypto.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E45B211C26C58861002F4709 /* libcurl.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = E45B20F726C58667002F4709 /* libcurl.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E45B211D26C58862002F4709 /* libfragmentzip.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = E45B20F626C58667002F4709 /* libfragmentzip.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E45B212226C5886A002F4709 /* libplist.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = E45B20F426C58667002F4709 /* libplist.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E45B212326C5886C002F4709 /* libssl.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = E45B20F526C58667002F4709 /* libssl.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E45B212426C5886E002F4709 /* libusbmuxd.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = E45B210126C58668002F4709 /* libusbmuxd.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E45B212526C58870002F4709 /* libzip.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = E45B20FD26C58668002F4709 /* libzip.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E46C15F226D83EDA001D6349 /* RNCryptor in Frameworks */ = {isa = PBXBuildFile; productRef = E46C15F126D83EDA001D6349 /* RNCryptor */; };
+		E46C15F626D8408D001D6349 /* extension2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E46C15F426D8408D001D6349 /* extension2.pdf */; };
+		E46C15F726D8408D001D6349 /* extension1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E46C15F526D8408D001D6349 /* extension1.pdf */; };
+		E4A737FD26D93E8300BEE67F /* libiMobileeDevice.dylib in Resources */ = {isa = PBXBuildFile; fileRef = E4E97CED26D9351F0045ECD1 /* libiMobileeDevice.dylib */; };
+		E4B5434C26D7E739009EBDDB /* idevicebackup2.c in Sources */ = {isa = PBXBuildFile; fileRef = E4B5434B26D7E738009EBDDB /* idevicebackup2.c */; };
+		E4E25E6B26D80CAB00CF8FD7 /* libimobiledevice-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E25E6A26D80CAB00CF8FD7 /* libimobiledevice-1.0.a */; };
+		E4E97CEE26D9351F0045ECD1 /* libiMobileeDevice.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E97CED26D9351F0045ECD1 /* libiMobileeDevice.dylib */; };
+		E4E97CF126D937A00045ECD1 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = E4E97CF026D937A00045ECD1 /* ZIPFoundation */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E45B20D826C5828B002F4709 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E45B211C26C58861002F4709 /* libcurl.dylib in Embed Libraries */,
+				E45B212326C5886C002F4709 /* libssl.dylib in Embed Libraries */,
+				E45B212226C5886A002F4709 /* libplist.dylib in Embed Libraries */,
+				E45B211B26C58860002F4709 /* libcrypto.dylib in Embed Libraries */,
+				E45B211D26C58862002F4709 /* libfragmentzip.dylib in Embed Libraries */,
+				E45B212426C5886E002F4709 /* libusbmuxd.dylib in Embed Libraries */,
+				E45B212526C58870002F4709 /* libzip.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E45B209526C57749002F4709 /* MDMPatcher Universal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MDMPatcher Universal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E45B209826C57749002F4709 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E45B209A26C57749002F4709 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E45B209C26C5774B002F4709 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E45B209F26C5774B002F4709 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E45B20A126C5774B002F4709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E45B20A226C5774B002F4709 /* MDMPatcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MDMPatcher.entitlements; sourceTree = "<group>"; };
+		E45B20A926C57A69002F4709 /* USBDetection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USBDetection.swift; sourceTree = "<group>"; };
+		E45B20D926C5835B002F4709 /* MDMPatcher-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MDMPatcher-Bridging-Header.h"; sourceTree = "<group>"; };
+		E45B20E226C5855C002F4709 /* libidevicefunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libidevicefunctions.h; sourceTree = "<group>"; };
+		E45B20E326C5855C002F4709 /* thread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = thread.c; sourceTree = "<group>"; };
+		E45B20E426C5855C002F4709 /* socket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = socket.c; sourceTree = "<group>"; };
+		E45B20E726C5855D002F4709 /* socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socket.h; sourceTree = "<group>"; };
+		E45B20E826C5855D002F4709 /* libidevicefunctions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libidevicefunctions.c; sourceTree = "<group>"; };
+		E45B20EB26C5855E002F4709 /* thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread.h; sourceTree = "<group>"; };
+		E45B20F126C58667002F4709 /* libiboot32patcher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiboot32patcher.a; sourceTree = "<group>"; };
+		E45B20F226C58667002F4709 /* libcbpatcher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcbpatcher.a; sourceTree = "<group>"; };
+		E45B20F326C58667002F4709 /* libidevicerestore-old.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libidevicerestore-old.a"; sourceTree = "<group>"; };
+		E45B20F426C58667002F4709 /* libplist.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libplist.dylib; sourceTree = "<group>"; };
+		E45B20F526C58667002F4709 /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libssl.dylib; sourceTree = "<group>"; };
+		E45B20F626C58667002F4709 /* libfragmentzip.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfragmentzip.dylib; sourceTree = "<group>"; };
+		E45B20F726C58667002F4709 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcurl.dylib; sourceTree = "<group>"; };
+		E45B20F826C58667002F4709 /* libidevicerestore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libidevicerestore.a; sourceTree = "<group>"; };
+		E45B20F926C58667002F4709 /* libcbpatcher-old.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libcbpatcher-old.a"; sourceTree = "<group>"; };
+		E45B20FA26C58667002F4709 /* libxpwntool-old.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libxpwntool-old.a"; sourceTree = "<group>"; };
+		E45B20FB26C58667002F4709 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcrypto.dylib; sourceTree = "<group>"; };
+		E45B20FD26C58668002F4709 /* libzip.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libzip.dylib; sourceTree = "<group>"; };
+		E45B20FF26C58668002F4709 /* libideviceactivation-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libideviceactivation-1.0.a"; sourceTree = "<group>"; };
+		E45B210126C58668002F4709 /* libusbmuxd.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libusbmuxd.dylib; sourceTree = "<group>"; };
+		E45B210226C58668002F4709 /* libxpwntool.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libxpwntool.a; sourceTree = "<group>"; };
+		E45B211726C5871A002F4709 /* iDeviceInfoFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iDeviceInfoFunctions.swift; sourceTree = "<group>"; };
+		E45B211826C5871A002F4709 /* ExtensionsShit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsShit.swift; sourceTree = "<group>"; };
+		E45B212826C596F9002F4709 /* asprintf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = asprintf.h; sourceTree = "<group>"; };
+		E45B212926C596F9002F4709 /* endianness.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = endianness.h; sourceTree = "<group>"; };
+		E462DD2326D7FEED007CC2B0 /* idevicebackup2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = idevicebackup2.h; sourceTree = "<group>"; };
+		E46C15F426D8408D001D6349 /* extension2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = extension2.pdf; sourceTree = "<group>"; };
+		E46C15F526D8408D001D6349 /* extension1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = extension1.pdf; sourceTree = "<group>"; };
+		E4B5434B26D7E738009EBDDB /* idevicebackup2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = idevicebackup2.c; sourceTree = "<group>"; };
+		E4E25E6A26D80CAB00CF8FD7 /* libimobiledevice-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libimobiledevice-1.0.a"; sourceTree = "<group>"; };
+		E4E97CED26D9351F0045ECD1 /* libiMobileeDevice.dylib */ = {isa = PBXFileReference; explicitFileType = compiled; path = libiMobileeDevice.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E45B209226C57749002F4709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45B211526C58668002F4709 /* libxpwntool.a in Frameworks */,
+				E4E97CF126D937A00045ECD1 /* ZIPFoundation in Frameworks */,
+				E45B211226C58668002F4709 /* libideviceactivation-1.0.a in Frameworks */,
+				E45B210526C58668002F4709 /* libcbpatcher.a in Frameworks */,
+				E45B210426C58668002F4709 /* libiboot32patcher.a in Frameworks */,
+				E46C15F226D83EDA001D6349 /* RNCryptor in Frameworks */,
+				E45B211426C58668002F4709 /* libusbmuxd.dylib in Frameworks */,
+				E45B210926C58668002F4709 /* libfragmentzip.dylib in Frameworks */,
+				E45B210626C58668002F4709 /* libidevicerestore-old.a in Frameworks */,
+				E4E97CEE26D9351F0045ECD1 /* libiMobileeDevice.dylib in Frameworks */,
+				E4E25E6B26D80CAB00CF8FD7 /* libimobiledevice-1.0.a in Frameworks */,
+				E45B210E26C58668002F4709 /* libcrypto.dylib in Frameworks */,
+				E45B210A26C58668002F4709 /* libcurl.dylib in Frameworks */,
+				E45B210726C58668002F4709 /* libplist.dylib in Frameworks */,
+				E45B210D26C58668002F4709 /* libxpwntool-old.a in Frameworks */,
+				E45B210C26C58668002F4709 /* libcbpatcher-old.a in Frameworks */,
+				E45B210B26C58668002F4709 /* libidevicerestore.a in Frameworks */,
+				E45B210826C58668002F4709 /* libssl.dylib in Frameworks */,
+				E45B211026C58668002F4709 /* libzip.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E45B208C26C57749002F4709 = {
+			isa = PBXGroup;
+			children = (
+				E45B209726C57749002F4709 /* MDMPatcher */,
+				E45B209626C57749002F4709 /* Products */,
+				E45B20AC26C58285002F4709 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E45B209626C57749002F4709 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E45B209526C57749002F4709 /* MDMPatcher Universal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E45B209726C57749002F4709 /* MDMPatcher */ = {
+			isa = PBXGroup;
+			children = (
+				E45B209826C57749002F4709 /* AppDelegate.swift */,
+				E45B209A26C57749002F4709 /* ViewController.swift */,
+				E45B209C26C5774B002F4709 /* Assets.xcassets */,
+				E45B209E26C5774B002F4709 /* Main.storyboard */,
+				E45B20A926C57A69002F4709 /* USBDetection.swift */,
+				E45B20A126C5774B002F4709 /* Info.plist */,
+				E45B20A226C5774B002F4709 /* MDMPatcher.entitlements */,
+				E45B211826C5871A002F4709 /* ExtensionsShit.swift */,
+				E45B211726C5871A002F4709 /* iDeviceInfoFunctions.swift */,
+				E45B20E826C5855D002F4709 /* libidevicefunctions.c */,
+				E45B212826C596F9002F4709 /* asprintf.h */,
+				E45B212926C596F9002F4709 /* endianness.h */,
+				E46C15F526D8408D001D6349 /* extension1.pdf */,
+				E46C15F426D8408D001D6349 /* extension2.pdf */,
+				E45B20E226C5855C002F4709 /* libidevicefunctions.h */,
+				E45B20E426C5855C002F4709 /* socket.c */,
+				E45B20E726C5855D002F4709 /* socket.h */,
+				E45B20E326C5855C002F4709 /* thread.c */,
+				E4E97CED26D9351F0045ECD1 /* libiMobileeDevice.dylib */,
+				E4B5434B26D7E738009EBDDB /* idevicebackup2.c */,
+				E462DD2326D7FEED007CC2B0 /* idevicebackup2.h */,
+				E45B20EB26C5855E002F4709 /* thread.h */,
+				E45B20D926C5835B002F4709 /* MDMPatcher-Bridging-Header.h */,
+			);
+			path = MDMPatcher;
+			sourceTree = "<group>";
+		};
+		E45B20AC26C58285002F4709 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E45B20F926C58667002F4709 /* libcbpatcher-old.a */,
+				E45B20F226C58667002F4709 /* libcbpatcher.a */,
+				E45B20FB26C58667002F4709 /* libcrypto.dylib */,
+				E45B20F726C58667002F4709 /* libcurl.dylib */,
+				E45B20F626C58667002F4709 /* libfragmentzip.dylib */,
+				E45B20F126C58667002F4709 /* libiboot32patcher.a */,
+				E45B20FF26C58668002F4709 /* libideviceactivation-1.0.a */,
+				E4E25E6A26D80CAB00CF8FD7 /* libimobiledevice-1.0.a */,
+				E45B20F326C58667002F4709 /* libidevicerestore-old.a */,
+				E45B20F826C58667002F4709 /* libidevicerestore.a */,
+				E45B20F426C58667002F4709 /* libplist.dylib */,
+				E45B20F526C58667002F4709 /* libssl.dylib */,
+				E45B210126C58668002F4709 /* libusbmuxd.dylib */,
+				E45B20FA26C58667002F4709 /* libxpwntool-old.a */,
+				E45B210226C58668002F4709 /* libxpwntool.a */,
+				E45B20FD26C58668002F4709 /* libzip.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E45B209426C57749002F4709 /* MDMPatcher Universal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E45B20A526C5774B002F4709 /* Build configuration list for PBXNativeTarget "MDMPatcher Universal" */;
+			buildPhases = (
+				E45B209126C57749002F4709 /* Sources */,
+				E45B209226C57749002F4709 /* Frameworks */,
+				E45B209326C57749002F4709 /* Resources */,
+				E45B20D826C5828B002F4709 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MDMPatcher Universal";
+			packageProductDependencies = (
+				E46C15F126D83EDA001D6349 /* RNCryptor */,
+				E4E97CF026D937A00045ECD1 /* ZIPFoundation */,
+			);
+			productName = iMDMActivatePro;
+			productReference = E45B209526C57749002F4709 /* MDMPatcher Universal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E45B208D26C57749002F4709 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					E45B209426C57749002F4709 = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+					};
+				};
+			};
+			buildConfigurationList = E45B209026C57749002F4709 /* Build configuration list for PBXProject "MDMPatcher Universal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E45B208C26C57749002F4709;
+			packageReferences = (
+				E46C15F026D83EDA001D6349 /* XCRemoteSwiftPackageReference "RNCryptor" */,
+				E4E97CEF26D937A00045ECD1 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+			);
+			productRefGroup = E45B209626C57749002F4709 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E45B209426C57749002F4709 /* MDMPatcher Universal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E45B209326C57749002F4709 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4A737FD26D93E8300BEE67F /* libiMobileeDevice.dylib in Resources */,
+				E46C15F726D8408D001D6349 /* extension1.pdf in Resources */,
+				E46C15F626D8408D001D6349 /* extension2.pdf in Resources */,
+				E45B209D26C5774B002F4709 /* Assets.xcassets in Resources */,
+				E45B20A026C5774B002F4709 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E45B209126C57749002F4709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45B20AA26C57A69002F4709 /* USBDetection.swift in Sources */,
+				E45B211A26C5871A002F4709 /* ExtensionsShit.swift in Sources */,
+				E4B5434C26D7E739009EBDDB /* idevicebackup2.c in Sources */,
+				E45B20ED26C5855E002F4709 /* socket.c in Sources */,
+				E45B20EC26C5855E002F4709 /* thread.c in Sources */,
+				E45B209B26C57749002F4709 /* ViewController.swift in Sources */,
+				E45B209926C57749002F4709 /* AppDelegate.swift in Sources */,
+				E45B211926C5871A002F4709 /* iDeviceInfoFunctions.swift in Sources */,
+				E45B20EF26C5855E002F4709 /* libidevicefunctions.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E45B209E26C5774B002F4709 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E45B209F26C5774B002F4709 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E45B20A326C5774B002F4709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E45B20A426C5774B002F4709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E45B20A626C5774B002F4709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MDMPatcher/MDMPatcher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXCLUDED_ARCHS = arm64;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/common",
+					/usr/local/include,
+					/opt/homebrew/Cellar/,
+					/opt/homebrew/Cellar/libplist/2.2.0/include,
+				);
+				INFOPLIST_FILE = MDMPatcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(SRCROOT)/common",
+					"$(PROJECT_DIR)/iMDMActivatePro",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.noone.mdmpatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MDMPatcher/MDMPatcher-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E45B20A726C5774B002F4709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MDMPatcher/MDMPatcher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXCLUDED_ARCHS = arm64;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/common",
+					/usr/local/include,
+					/opt/homebrew/Cellar/,
+					/opt/homebrew/Cellar/libplist/2.2.0/include,
+				);
+				INFOPLIST_FILE = MDMPatcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(SRCROOT)/common",
+					"$(PROJECT_DIR)/iMDMActivatePro",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.noone.mdmpatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MDMPatcher/MDMPatcher-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E45B209026C57749002F4709 /* Build configuration list for PBXProject "MDMPatcher Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E45B20A326C5774B002F4709 /* Debug */,
+				E45B20A426C5774B002F4709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E45B20A526C5774B002F4709 /* Build configuration list for PBXNativeTarget "MDMPatcher Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E45B20A626C5774B002F4709 /* Debug */,
+				E45B20A726C5774B002F4709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E46C15F026D83EDA001D6349 /* XCRemoteSwiftPackageReference "RNCryptor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RNCryptor/RNCryptor.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		E4E97CEF26D937A00045ECD1 /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.12;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E46C15F126D83EDA001D6349 /* RNCryptor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E46C15F026D83EDA001D6349 /* XCRemoteSwiftPackageReference "RNCryptor" */;
+			productName = RNCryptor;
+		};
+		E4E97CF026D937A00045ECD1 /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4E97CEF26D937A00045ECD1 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E45B208D26C57749002F4709 /* Project object */;
+}
