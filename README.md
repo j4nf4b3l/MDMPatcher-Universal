@@ -8,6 +8,7 @@
 
 ## System requirements
 macOS 10.13 or higher, Intel or M1.
+To fix the crash, turn off sip.
 
 
 ## Helpful for u?
